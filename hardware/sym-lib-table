@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name lattice_screen)(type Legacy)(uri ${KIPRJMOD}/lib/lattice_screen.lib)(options "")(descr ""))
+  (lib (name lattice_screen-rescue)(type Legacy)(uri ${KIPRJMOD}/lattice_screen-rescue.lib)(options "")(descr ""))
+)

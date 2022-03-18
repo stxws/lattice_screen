@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "task_build",
+            "executable": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
+            "request": "launch",
+			"type": "cortex-debug",
+			"svdFile": "STM32F103xx.svd",
+            "servertype": "openocd",
+            "configFiles":[
+                // "/usr/share/openocd/scripts/interface/stlink-v2-1.cfg",
+                // "/usr/share/openocd/scripts/target/stm32f1x_stlink.cfg"
+                "${workspaceRoot}/.vscode/openocd.cfg"
+            ],
+            "armToolchainPath": "/home/stxws/program/gcc-arm-none-eabi/bin"
+        }
+    ]
+}
